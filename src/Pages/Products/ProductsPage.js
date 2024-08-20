@@ -16,6 +16,8 @@ const ProductsPage = () => {
 
   let totalPages = allProducts.totalPages;
 
+  console.log(allProducts);
+
   const onPress = (page) => {
     setCurrentPage(page);
     setNewPage(page);

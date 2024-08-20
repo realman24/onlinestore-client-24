@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container } from "react-bootstrap";
 import GoToHome from "../../Components/Uitily/GoToHome";
-import AllProductHook from "../../hooks/product/AllProductHook ";
+import SearchProductHook from "../../hooks/product/AllProductHook ";
 import ProductSearchContainer from "../../Components/Products/ProductSearchContainer";
+import PaginationReact from "../../Components/Uitily/pagination-react";
 
 const ProductSearchPage = ({ word, goBack }) => {
-  const [allTotalProducts] = AllProductHook(word);
+  const [newPage, setNewPage] = useState(1);
+
+  const [searchProducts, setCurrentPage] = SearchProductHook(word);
+
+  let totalPages = searchProducts.totalPages;
+
+  const onPress = (page) => {
+    setCurrentPage(page);
+    setNewPage(page);
+
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="home d-flex flex-column align-content-start">
@@ -30,8 +42,17 @@ const ProductSearchPage = ({ word, goBack }) => {
           />
           {/* <p onClick={goBack}>Go Back</p> */}
 
-          <ProductSearchContainer allTotalProducts={allTotalProducts} />
+          <ProductSearchContainer searchProducts={searchProducts} />
         </div>
+        {totalPages > 1 ? (
+          <div className=" d-flex justify-content-center">
+            <PaginationReact
+              currentPage={newPage}
+              onPress={onPress}
+              totalPages={totalPages}
+            />
+          </div>
+        ) : null}
       </Container>
     </div>
   );

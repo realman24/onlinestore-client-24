@@ -10,27 +10,29 @@ import {
   GET_PRODUCT_DETALIS,
 } from "../type";
 
-//get all products without pagination
-export const getAllTotalProducts = (word) => async (dispatch) => {
-  try {
-    const response = await useGetData(`/product/all?name=${word}`);
-    dispatch({
-      type: GET_ALL_TOTAL_PRODUCTS,
-      payload: response,
-      loading: true,
-    });
-  } catch (e) {
-    dispatch({
-      type: GET_ALL_TOTAL_PRODUCTS,
-      payload: e.response,
-    });
-  }
-};
+// //get all products without pagination
+// export const getAllTotalProducts = (word) => async (dispatch) => {
+//   try {
+//     const response = await useGetData(`/product/all?name=${word}`);
+//     dispatch({
+//       type: GET_ALL_TOTAL_PRODUCTS,
+//       payload: response,
+//       loading: true,
+//     });
+//   } catch (e) {
+//     dispatch({
+//       type: GET_ALL_TOTAL_PRODUCTS,
+//       payload: e.response,
+//     });
+//   }
+// };
 
 //get all products with pagination
-export const getAllProducts = (page, limit) => async (dispatch) => {
+export const getAllProducts = (page, limit, word) => async (dispatch) => {
   try {
-    const response = await useGetData(`/product?page=${page}&limit=${limit}`);
+    const response = await useGetData(
+      `/product?page=${page}&limit=${limit}&name=${word}`
+    );
     dispatch({
       type: GET_ALL_PRODUCTS,
       payload: response,

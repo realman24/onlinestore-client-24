@@ -8,13 +8,15 @@ const ProductCardContinerHook = () => {
   const dispatch = useDispatch();
   const allProducts = useSelector((state) => state.productsReducer.allProducts);
 
-  console.log(allProducts);
-
+  let word = "";
   useEffect(() => {
-    dispatch(getAllProducts(currentPage, 7));
+    dispatch(getAllProducts(currentPage, 6, word));
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
+
+  console.log(allProducts);
+  console.log(currentPage);
 
   return [allProducts, setCurrentPage];
 };

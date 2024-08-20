@@ -1,23 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllTotalProducts } from "../../redux/actions/productsAction";
+import { getAllProducts } from "../../redux/actions/productsAction";
 
-const AllProductHook = (word) => {
+const SearchProductHook = (word) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getAllTotalProducts(word));
-
+    dispatch(getAllProducts(currentPage, 6, word));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [word]);
+  }, [currentPage, word]);
 
-  const allTotalProducts = useSelector(
+  const searchProducts = useSelector(
     (state) => state.productsReducer.allProducts
   );
 
-  console.log(allTotalProducts);
+  console.log(searchProducts);
 
-  return [allTotalProducts];
+  return [searchProducts, setCurrentPage];
 };
 
-export default AllProductHook;
+export default SearchProductHook;
+
+// const AllProductHook = (word) => {
+//   const dispatch = useDispatch();
+
+//   useEffect(() => {
+//     dispatch(getAllTotalProducts(word));
+
+//     // eslint-disable-next-line react-hooks/exhaustive-deps
+//   }, [word]);
+
+//   const allTotalProducts = useSelector(
+//     (state) => state.productsReducer.allProducts
+//   );
+
+//   console.log(allTotalProducts);
+
+//   return [allTotalProducts];
+// };
+
+// export default AllProductHook;

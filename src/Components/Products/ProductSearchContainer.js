@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row } from "react-bootstrap";
 import ProductCard from "./ProductCard";
 
-const ProductSearchContainer = ({ allTotalProducts }) => {
-  if (!allTotalProducts) {
+const ProductSearchContainer = ({ searchProducts }) => {
+  if (!searchProducts) {
     return <h1>Loading...</h1>;
   }
 
   return (
     <Row className="my-2 d-flex justify-content-start ">
-      {allTotalProducts.product ? (
-        allTotalProducts.product.length !== 0 ? (
-          allTotalProducts.product.map((item, index) => {
+      {searchProducts.product ? (
+        searchProducts.product.length !== 0 ? (
+          searchProducts.product.map((item, index) => {
             return (
               <ProductCard
                 key={index}

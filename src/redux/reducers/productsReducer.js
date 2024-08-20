@@ -25,12 +25,12 @@ const productsReducer = (state = inital, action) => {
     //     products: action.payload,
     //     loading: false,
     //   };
-    case GET_ALL_TOTAL_PRODUCTS:
-      return {
-        ...state,
-        allProducts: action.payload,
-        loading: false,
-      };
+    // case GET_ALL_TOTAL_PRODUCTS:
+    //   return {
+    //     ...state,
+    //     allProducts: action.payload,
+    //     loading: false,
+    //   };
     case GET_ALL_PRODUCTS:
       return {
         ...state,
