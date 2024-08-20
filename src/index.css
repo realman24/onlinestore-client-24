@@ -1,0 +1,1054 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+}
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+
+.container {
+  --bs-gutter-x: 0;
+}
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+  display: none;
+}
+.lock:hover .icon-lock {
+  display: inline;
+}
+
+.del-btn-text {
+  color: #080808;
+  font-family: "Almarai";
+  font-size: 0.75em;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 1em;
+  /* padding-left: 0.25em; */
+  text-align: left;
+}
+
+.lock:hover .del-btn-text {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.egp {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-align: justify;
+  padding-right: 0.5em;
+}
+
+.stat {
+  color: #979797;
+  font-family: Cairo;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  text-align: right;
+}
+
+.stat-small {
+  color: #979797;
+  font-family: Cairo;
+  font-size: 0.6em;
+  letter-spacing: 0;
+  line-height: 2em;
+  text-align: right;
+}
+/*--------------*/
+/*-- App page --*/
+/*--------------*/
+.app {
+  font-family: "Almarai", sans-serif;
+  background-color: #e3e6e6;
+}
+/*--- End - App component ---*/
+
+/*------------------------*/
+/*-- NavPage component --*/
+/*------------------------*/
+
+.login-img {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.dropdown-toggle {
+  color: white !important;
+  font-size: 1.2em !important;
+  font-weight: normal !important;
+  margin-top: 0.75em;
+}
+.dropdown-menu {
+  background-color: #212529 !important;
+  color: white !important;
+}
+.dropdown-item {
+  color: white !important;
+  text-align: left !important;
+}
+.dropdown-item:hover {
+  color: #212529 !important;
+  background-color: white !important;
+}
+
+.show-sections {
+  display: block;
+}
+
+.hide-sections {
+  display: none;
+}
+
+.search-subtitle {
+  padding: 0px 0px 0px 15px;
+  height: 35px;
+  color: #007185;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.search-form {
+  margin: 0 2em 0 2em;
+}
+
+.header-optionBasket {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.counter {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  line-height: 1;
+  background-color: white;
+  color: rgb(34, 34, 34);
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.fav-counter {
+  position: absolute;
+  bottom: 1.5em;
+  left: 2.2em;
+}
+
+.cart-counter {
+  position: absolute;
+  bottom: 1.5em;
+  left: 5.5em;
+}
+
+@media (max-width: 991px) {
+  .search-form {
+    margin: 0;
+  }
+}
+
+/*--- End - NavPage component ---*/
+
+/*------------------------*/
+/*-- HomePage component --*/
+/*------------------------*/
+.home {
+  font-family: "Almarai", sans-serif;
+  /* background-color: #f9f9f9; */
+  background-color: #e3e6e6;
+  min-height: 100vh;
+}
+
+.home-container {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 30px 0px;
+}
+
+.show-sections {
+  display: block;
+}
+
+.hide-sections {
+  display: none;
+}
+
+/*--- End - HomePage component ---*/
+
+/*------------------------*/
+/*--- slider component ---*/
+/*------------------------*/
+.slider-background {
+  /* background: linear-gradient(173.68deg, #ffedf5 0%, #ffd5e7 100%); */
+  background: linear-gradient(#ce3a7a, #ffedf5);
+}
+
+.slider-background1 {
+  background: #f0d0b7;
+}
+
+.slider-background2 {
+  background: linear-gradient(174.76deg, #d3deff 0%, #037db0 100%);
+}
+.slider-background3 {
+  /* background: #ffe0e6; */
+  background: linear-gradient(#d4b8be, #ffedf5);
+}
+.slider-background4 {
+  background: linear-gradient(175.24deg, #b2e8f0 0%, #c9c9c9 100%);
+}
+
+.slider-text {
+  margin: 0 2em;
+}
+.slider-title {
+  color: #915970;
+  font-family: Almarai;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 53px;
+  text-align: center;
+}
+
+@media (max-width: 656px) {
+  .slider-text {
+    margin: 2em 2em 0 2em;
+  }
+}
+
+.slider-desc {
+  color: #915970;
+  font-family: Almarai;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-align: center;
+}
+
+/*--- End - slider component ---*/
+
+/*--------------------------*/
+/*--- HomeProduct component ---*/
+/*--------------------------*/
+
+.next-img {
+  max-width: 2em;
+  max-height: 2em;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.next-img:hover {
+  opacity: 1;
+}
+
+/*--- End - HomeProduct component ---*/
+
+/*--------------------------*/
+/*--- subtitle component ---*/
+/*--------------------------*/
+
+/* .subtitle-dev {
+  margin-top: 2em;
+} */
+
+.subtile-txt {
+  color: #272727;
+  font-family: Almarai;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.shopping-now {
+  padding: 0px 0px 0px 15px;
+  height: 35px;
+  /* width: 90px; */
+  color: #007185;
+  text-decoration: none;
+  text-align: center;
+  /* border: 1px solid #272727;
+  border-radius: 14px; */
+}
+
+.shopping-now:hover {
+  /* background-color: #272727; */
+  text-decoration: underline;
+  /* border: 1px solid #272727; */
+  color: #b84c31;
+  /* color: #f9f9f9; */
+  /* border-radius: 14px; */
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .admin-side-text {
+    font-size: 0.5em;
+  }
+}
+
+/*--- End - subtitle component ---*/
+
+/*-------------------------------*/
+/*--- product card component ---*/
+/*------------------------------*/
+
+.card-title {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: left;
+}
+
+.card-price {
+  color: #272727;
+  font-family: Almarai;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.card-rate {
+  color: #ffc107;
+  font-family: Almarai;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+.fav-icon {
+  cursor: copy;
+}
+
+/*--- End - product card component ---*/
+
+/*---------------------------------*/
+/*---- category Page Components----*/
+/*---------------------------------*/
+
+.category-page-container {
+  font-family: "Almarai", sans-serif;
+  /* background-color: #f9f9f9; */
+  background-color: #e3e6e6;
+  min-height: 50vh;
+}
+
+/*--- End - category Page  ---*/
+
+/*---------------------------------*/
+/*---- category card component ----*/
+/*---------------------------------*/
+.allCard {
+  position: relative;
+  height: 4em;
+  width: 4em;
+}
+
+.categoty-card {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  /* opacity: 0.75; */
+  filter: brightness(130%);
+  align-content: end;
+  background-color: #b95208;
+}
+.categoty-card-img {
+  max-width: 10em;
+  max-height: 9em;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.categoty-card-decor {
+  max-width: 12em;
+  max-height: 12em;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.categoty-card-text {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  text-wrap: none;
+}
+
+/*--- End - category card component ---*/
+
+/*-----------------------------------*/
+/*---------- Brand section ----------*/
+/*-----------------------------------*/
+
+.brand-card-img {
+  width: 9em;
+  /* width: 7em; */
+  max-width: 10em;
+  max-height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*-------End - Brand setion ----------*/
+
+/*-----------------------------------*/
+/*-------- discount section --------*/
+/*-----------------------------------*/
+.home-container-offers {
+  border-radius: 8px;
+  background: radial-gradient(#ffad39 0%, #ff9c18 100%);
+  height: 15em;
+}
+
+.discount-title {
+  color: #ffffff;
+  font-family: Cairo;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 39px;
+  text-shadow: 3px 1px 3px #de6d00;
+}
+.dicount-img {
+  max-height: 15em;
+  max-width: 100%;
+}
+/*------ End - discount ---------*/
+
+/*-----------------------------------*/
+/*-------- foter section --------*/
+/*-----------------------------------*/
+.footer-background {
+  background-color: #1d1f1f;
+}
+
+.footer-shroot {
+  color: #979797;
+  font-family: Almarai;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.footer-brand {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-align: left;
+  text-align: justify;
+}
+
+/*-------- end footer ----------*/
+
+/*-----------------------------------*/
+/*------------- Auth Page -----------*/
+/*-----------------------------------*/
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1d1f1f;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.redirect {
+  cursor: pointer;
+}
+
+.auth-brand {
+  margin-bottom: 2em;
+}
+
+/*------- End - Auth Page ------*/
+
+/*------- Admin & User style from course code - will be edited ------*/
+
+/* admin style  */
+.admin-profile {
+  /* min-height: 660px; */
+  min-height: 50em;
+
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 20em;
+  width: 100%;
+  margin-top: 5em;
+  border-radius: 0.5em;
+  background-color: #ffffff;
+}
+
+.admin-side-text {
+  color: #272727;
+  font-family: "Almarai";
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-side-text:hover {
+  background-color: #272727;
+  color: white;
+  font-size: 1.1em;
+}
+
+.admin-content-title {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 2em;
+  text-align: left;
+}
+.admin-content-title2 {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.item-delete-edit {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-align: left;
+  cursor: pointer;
+  align-items: center;
+}
+
+.text-form {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: left;
+}
+.input-form {
+  height: 37px;
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.input-form-area {
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.select {
+  box-sizing: border-box;
+  height: 40px;
+  color: #979797;
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+.btn-save {
+  border: none;
+  color: white;
+  height: 46px;
+  width: 150px;
+  border-radius: 9px;
+  background-color: #272727;
+}
+.btn-save:hover {
+  color: rgb(164, 164, 164);
+}
+.btn-a {
+  border: none;
+  color: white;
+  height: 45px;
+  border-radius: 9px;
+  background-color: #272727;
+}
+.btn-a:hover {
+  color: rgb(164, 164, 164);
+}
+/* end admin  */
+
+/* user order */
+.user-order {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
+}
+.order-title {
+  color: #272727;
+  font-family: "Almarai";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* end user order */
+
+/* user Address */
+
+.user-address-card {
+  min-height: 10em;
+  width: 100%;
+  border-radius: 1em;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
+}
+.btn-add-address {
+  border: none;
+  height: 3em;
+  width: 100%;
+  font-size: 0.5em;
+  font-weight: 600;
+  color: white;
+  border-radius: 0.5em;
+  background-color: #272727;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.admin-content-text {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.5em;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 2em;
+  text-align: left;
+  padding-bottom: 0.75em;
+}
+
+/* user address */
+
+/* user card data */
+.user-data {
+  height: 270px;
+  width: 100% !important;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
+}
+/* end user data */
+
+/*------- End ---- Admin & User style from course code ------*/
+
+/*----------- Pagination ----------*/
+.page-link {
+  color: #555550 !important;
+}
+
+/*-------End ---- Pagination ------*/
+
+/* products details page */
+.product-gallary-card {
+  height: 25em !important;
+  width: 20em !important;
+  border-radius: 29px;
+  background-color: #ffffff;
+}
+
+.gallary-card {
+  height: 20em !important;
+  justify-content: center !important;
+}
+
+.carousel-item img {
+  min-height: 15em !important;
+  min-width: 15em !important;
+}
+
+.gallary-card-thumb img {
+  min-height: 5em !important;
+  min-width: 5em !important;
+}
+
+.carousel-inner {
+  justify-self: center;
+  align-self: center;
+}
+.cat-text {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 0.75em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 23px;
+  /* padding-left: 0.25em; */
+  text-align: left;
+}
+
+.cat-title {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.cat-rate {
+  color: #ffc107;
+  font-family: "Almarai";
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 0.6em;
+  text-align: left;
+  padding-right: 0.15em;
+}
+
+.rate-count {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.barnd-text {
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  /* align-self: center;
+  align-items: center;
+  align-content: center; */
+}
+
+/* .color {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+} */
+.product-description {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 26px;
+  text-align: justify;
+}
+.product-price {
+  /* height: 46px;
+  width: 150px; */
+  text-align: center;
+  padding: 0.6em;
+  border-radius: 0.5em;
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+/* products gallary slide style */
+/* .image-gallery-slide {
+  width: 372px;
+  height: 470px;
+  border-radius: 29px;
+} */
+
+@media (max-width: 991px) {
+  .prod-galary {
+    justify-content: center;
+  }
+
+  .cat-title {
+    text-align: center;
+  }
+
+  .prod-text {
+    text-align: justify;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .product-price-cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* end gallary */
+/* end products page */
+
+/* cart page */
+.product-cart-add {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #272727;
+  color: #ffffff;
+  font-family: "Almarai";
+  font-size: 1em;
+  font-weight: normal;
+}
+.product-cart-add:hover {
+  color: #bdbaba !important;
+}
+
+.product-cart-add a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.cart-title {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1.7em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  text-align: left;
+}
+.cart-item-body {
+  height: 13em;
+  width: 100%;
+  border-radius: 1em;
+  background-color: #ffffff;
+}
+
+.cart-item-name {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-align: left;
+}
+.cart-item-desc {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-align: justify;
+  padding-right: 1em;
+}
+
+.cart-egp {
+  /* padding-left: 0.5em; */
+  padding-right: 0.5em;
+}
+
+.cart-item-brand {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 0.6em;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1em;
+  text-align: justify;
+}
+
+.del-cart {
+  color: #979797;
+  font-family: "Almarai";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 23px;
+  /* padding-left: 0.25em; */
+  text-align: left;
+  margin-bottom: 0.75em;
+}
+
+.copon-form {
+  border: 0.3 solid #cf1212 !important;
+  border-radius: 5em;
+}
+
+.copon-input {
+  box-sizing: border-box;
+  height: 46px;
+  width: 90%;
+  /* border: 1px solid #979797; */
+  font-family: "Almarai";
+  font-size: 0.8em;
+  font-weight: normal;
+}
+.copon-btn {
+  cursor: pointer;
+  border: none;
+  height: 46px;
+  padding-top: 5px;
+  /* border-radius: 5px !important; */
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px !important;
+  border-radius: 0 !important;
+  background-color: #272727;
+  color: #ffff !important;
+  font-family: "Almarai";
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+.cart-checkout {
+  height: auto;
+  width: 100%;
+  border-radius: 1em;
+  background-color: #ffffff;
+  /* padding: 1em; */
+}
+
+.cart-price {
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.5em;
+}
+
+/* cart end */
+
+.notification {
+  font-family: "Almarai";
+  font-size: 34px;
+  font-weight: normal;
+  text-align: center;
+  color: rgb(21, 89, 216);
+  font-style: italic;
+}
+
+/*------- checkout page and components ------*/
+
+.checkout-subtitle {
+  text-align: center;
+  padding: 0.6em;
+  border-radius: 0.5em;
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1.1em;
+  font-weight: 800;
+  /* background-color: #ffffff; */
+}
+
+.checkout-item {
+  text-align: start;
+  padding: 0.7em 1.5em;
+  border-radius: 0.5em;
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 0.9em;
+  font-weight: 600;
+  /* background-color: #ffffff; */
+}
+
+.checkout-price {
+  text-align: start;
+  padding: 0.3em 0.6em;
+  border-radius: 0.5em;
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.checkout-total {
+  text-align: start;
+  margin-left: 0.6em;
+  padding: 0.9em 1.5em 0.9em 0em;
+  color: #555550;
+  font-family: "Almarai";
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.checkout-btn {
+  margin: 0.6em 0.2em;
+}
+
+.checkout-address-details {
+  color: #555550;
+  font-family: "Almarai";
+  font-size: "0.7em" !important;
+}
+
+/*------- End - checkout page and components ------*/
