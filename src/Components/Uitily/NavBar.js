@@ -24,11 +24,12 @@ const NavBar = ({ setHide }) => {
   const [word, setWord] = useState("");
 
   const [cartItems, numOfCartItems] = AllCartItemsHook();
-  const [fav, handleFav, favProd, favIcon, setFav, favNumbers] =
+  const [fav, handleFav, favProd, favIcon, setFav, favNum] =
     UserWishListHook();
 
-  console.log(favNumbers);
+  console.log(favNum);
   console.log(favProd);
+
 
   const [logName, setLogName] = useState("");
   const dataUser = localStorage.getItem("user");
@@ -164,8 +165,8 @@ const NavBar = ({ setHide }) => {
                     fontWeight: "normal",
                   }}
                 >
-                  {favNumbers > 0 ? (
-                    <span className="counter fav-counter">{favNumbers}</span>
+                  {favNum > 0 ? (
+                    <span className="counter fav-counter">{favNum}</span>
                   ) : null}
                 </p>
                 <img src={favorite} className="login-img" alt="sfvs" />

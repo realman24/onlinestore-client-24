@@ -14,15 +14,16 @@ const ProductsPage = () => {
 
   const [allProducts, setCurrentPage] = ProductCardContinerHook();
 
-  let totalPages = allProducts.totalPages;
+  let totalPages;
+  if(allProducts.totalPages){totalPages= allProducts.totalPages}
+  // let totalPages= allProducts.totalPages;
 
   console.log(allProducts);
 
   const onPress = (page) => {
     setCurrentPage(page);
     setNewPage(page);
-
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   };
 
   return (

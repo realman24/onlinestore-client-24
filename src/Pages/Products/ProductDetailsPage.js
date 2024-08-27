@@ -11,14 +11,9 @@ const ProductDetailsPage = ({ prod }) => {
 
   return (
     <div style={{ minHeight: "670px" }}>
-      {/* <div className=" d-flex flex-column align-content-start"> */}
       <NavBar setHide={setHide} />
-      {/* <Container></Container> */}
-      {/* <CategoryHeader /> */}
       <Container className={hide}>
         <ProductDetails />
-        {/* <RateContainer /> */}
-        {/* <ProductSimilarContiner prod={prod} title="منتجات قد تعجبك" /> */}
       </Container>
     </div>
   );

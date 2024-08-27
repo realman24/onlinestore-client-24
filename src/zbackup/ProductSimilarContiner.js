@@ -1,12 +1,12 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import ProductCard from "./ProductCard";
+import ProductCard from "../Components/Products/ProductCard";
 import { useParams } from "react-router-dom";
 
-import ProductCardContinerHook from "../../hooks/product/ProductCardContinerHook";
-import ProductsDetalisHook from "../../hooks/product/ProductsDetalisHook";
+import ProductCardContinerHook from "../hooks/product/ProductCardContinerHook";
+import ProductsDetalisHook from "../hooks/product/ProductsDetalisHook";
 
-import SubTitle from "../Uitily/SubTitle";
+import SubTitle from "../Components/Uitily/SubTitle";
 
 const ProductSimilarContiner = () => {
   const [item, cat, brand, prod] = ProductsDetalisHook();

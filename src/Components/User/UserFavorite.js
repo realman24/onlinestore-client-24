@@ -4,7 +4,7 @@ import ProductCard from "../Products/ProductCard";
 import UserWishListHook from "../../hooks/user/UserWishListHook";
 
 const UserFavorite = () => {
-  const [fav, handleFav, favProd, favIcon, setFav, favNumbers] =
+  const [fav, handleFav, favProd, favIcon, setFav, favNum] =
     UserWishListHook();
   return (
     <div className="admin-profile">

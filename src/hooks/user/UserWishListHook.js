@@ -15,6 +15,7 @@ const UserWishListHook = (pId) => {
   let favIcon = favon;
 
   const [fav, setFav] = useState(noFavIcon);
+  // const [favNum, setFavNum] = useState("");
   const [loading, setLoading] = useState(true);
   const [favProd, setFavProd] = useState([]);
 
@@ -24,11 +25,14 @@ const UserWishListHook = (pId) => {
 
   const addToWishList = async () => {
     await dispatch(addProductToWishList({ productId: pId }));
+    window.location.reload()
   };
 
   const removeFromWishList = async () => {
     await dispatch(removeProductToWishList(pId));
+    window.location.reload()
   };
+  
 
   const res = useSelector((state) => state.wishListReducer.allWishList);
 
@@ -38,9 +42,10 @@ const UserWishListHook = (pId) => {
       await dispatch(getProductWishList());
       setLoading(false);
     };
-
     get();
   }, [fav]);
+
+
 
   useEffect(() => {
     if (loading === false) {
@@ -54,23 +59,24 @@ const UserWishListHook = (pId) => {
     if (fav === noFavIcon) {
       setFav(favIcon);
       addToWishList();
-    } else {
+
+    } else if (fav === favIcon){
       setFav(noFavIcon);
       removeFromWishList();
     }
   };
 
-  let favNumbers = "";
+  let favNum = "";
   if (res !== undefined) {
-    favNumbers = res.results;
+    favNum = res.results;
   }
 
+
   console.log(favProd);
-  console.log(favNumbers);
 
   // console.log(res);
 
-  return [fav, handleFav, favProd, favIcon, setFav, favNumbers];
+  return [fav, handleFav, favProd, favIcon, setFav, favNum];
 };
 
 export default UserWishListHook;

@@ -11,7 +11,10 @@ const ProductSearchPage = ({ word, goBack }) => {
 
   const [searchProducts, setCurrentPage] = SearchProductHook(word);
 
-  let totalPages = searchProducts.totalPages;
+  let totalPages;
+  if(searchProducts.totalPages){
+  totalPages= searchProducts.totalPages;
+}
 
   const onPress = (page) => {
     setCurrentPage(page);

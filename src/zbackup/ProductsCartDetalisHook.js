@@ -3,9 +3,9 @@ import item from "../../images/item.png";
 import {
   getOneProduct,
   getProductLike,
-} from "../../redux/actions/productsAction";
-import { getOneBrand } from "../../redux/actions/brandAction";
-import { getOneCategory } from "../../redux/actions/categoryAction";
+} from "../redux/actions/productsAction";
+import { getOneBrand } from "../redux/actions/brandAction";
+import { getOneCategory } from "../redux/actions/categoryAction";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";

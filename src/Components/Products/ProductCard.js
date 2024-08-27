@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 
 import UserWishListHook from "../../hooks/user/UserWishListHook";
 
+import favoff from "../../images/fav-off.png";
+import favon from "../../images/fav-on.png";
+
 const ProductCard = ({ title, img, description, price, id }) => {
-  const [fav, handleFav, favProd, favIcon, setFav, favNumbers] =
+  const [fav, handleFav, favProd, favIcon, setFav, favNum] =
     UserWishListHook(id);
   console.log(id);
 
@@ -44,7 +47,7 @@ const ProductCard = ({ title, img, description, price, id }) => {
           <div className="fav-icon d-flex justify-content-start mx-3 ">
             <img
               onClick={handleFav}
-              src={fav}
+              src={favProd.some((fitem) => fitem._id === id) ?fav :favoff}
               // src={favImg}
               alt=""
               className="text-center"

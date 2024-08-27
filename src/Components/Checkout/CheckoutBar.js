@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AllCartItemsHook } from "../../hooks/user/UserCartHooks";
 
 const CheckoutBar = ({ resevedAdrs, resevedPay }) => {
-  const [cartItems, numOfCartItems] = AllCartItemsHook();
+  const [cartItems, numOf] = AllCartItemsHook();
 
   let totalItemsPrice = "";
   let OrderTotals = "";
